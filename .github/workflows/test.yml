@@ -1,0 +1,14 @@
+name: Image Scan
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    steps:
+    - name: Trigger AWS ECR Image Scan
+      id: aws_ecr_image_scan
+      uses: revathi-murali/aws_ecr_image_scan_action@v1
+      with:
+        region: 'us-east-1'
