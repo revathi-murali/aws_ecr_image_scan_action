@@ -17,7 +17,7 @@ inputs:
     description: 'AWS ECR repo name'
     required: true
   aws_ecr_tag:
-    description: 'Docker image's tag name. Defaults to latest if not specified'
+    description: 'Docker images tag name. Defaults to latest if not specified'
     required: false
 runs:
   using: 'docker'
